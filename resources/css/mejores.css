@@ -1,0 +1,239 @@
+.resultados{
+    height: 145vw !important;
+}
+*{
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.container{
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 145vw !important;
+    min-height:145vw !important ;
+    max-height:145vw !important ;
+    
+    
+}
+.tops{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 15vw;
+    display:flex;
+    align-items: center; 
+    
+}
+.perfiles{
+    position:absolute;
+    top: 13vw;
+    width: 95% !important;
+    height: 30vw !important;
+    max-height:30vw ;
+    min-height: 30vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 2vw !important;
+    margin-top: 2vw !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+
+}
+.perfiles::-webkit-scrollbar {
+    width: 15px;
+  }
+  .perfiles::-webkit-scrollbar-thumb {
+    background-color: #ff7987 !important ;
+    border-radius: 8px;
+  }
+.tablaMejoresR{
+   position: absolute;
+   top: 50vw;
+    width: 95% !important;
+    height: 55vw;
+    min-height: 55vw;
+    max-height: 55vw;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+}
+#tablaMejores{
+    width: 100%;
+    height: 25vw !important;
+    max-height: 25vw !important;
+    min-height: 25vw !important;
+   
+   
+}
+.cardMejor{
+    width: 100%;
+    height: 30vw;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+    border-radius: 15px;
+}
+.datosAsoirante {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 45%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center;
+    align-content: center;
+    border-right:solid 5px rgba(255,255,255, 0.9) ;
+    background-color: rgba(0, 0, 0, 1);
+    
+    
+}
+.candidato{
+    width: 65%;
+    height: 65%;
+    margin: 0;
+    padding: 0;
+    border:solid 1px white ;
+}
+.curepo{
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translate(-2vw,0);
+}
+.nombre{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 7vw;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+   
+    margin: 0% 2vw 0% 2vw !important;
+}
+.puesto{ 
+    position: absolute;
+    top: 7vw;
+    left: 0;
+    width: 100%;
+    height: 10vw;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+    margin: 0% 2vw 0% 2vw !important;
+    
+}
+.puntaje{
+    position: absolute;
+    top: 17vw;
+    width: 100%;
+    height: 7vw;
+    left: 0;
+    margin: 0% 2vw 0% 2vw !important;
+
+
+}
+.titPuesto{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    
+}
+.salida{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 85%;
+    top: 15%;
+    text-align: center !important;
+}
+.aspirantee{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 50%;
+    height: 85%;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important ;
+    border-left: solid 2px rgba(0, 0, 0, 0.5);
+}
+.a{
+    line-height: 50px;
+}
+.b{
+    line-height: 80px;
+}
+.vermas{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+ 
+    margin: 0 !important;
+    padding: 0;
+    right:  0;
+    height: 2vw;
+    transform: translate(2vw,0);
+}
+label{
+  
+    width: 100% !important;
+    padding-top:1vw !important;
+    padding-bottom:1vw !important;
+    margin-bottom: 1vw !important;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+.btn-secondary{
+    width: 50px;
+    height: 50px;
+    margin-right:10px ;
+    margin-left:10px ;
+    padding: 10px;
+    border-right:solid 2px black;
+    border-left: solid 2px black;
+}
+.dt-buttons{
+    width: 35%;
+}
+
+.dataTables_paginate{
+    
+    height: 7vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.pagination{
+    width:40% ;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginate_button{
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.page-link{
+    height: 100%;
+    
+}
+.page-item.active{
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: black;
+}

@@ -1,0 +1,62 @@
+table th {
+  
+    color: black;
+}
+table>tbody>tr>td {
+    vertical-align: middle !important;
+}
+
+/*para alinear los botones y cuadro de busqueda*/
+.btn-group, .btn-group-vertical {
+    position: absolute !important;
+}
+.dataTables_paginate,.paging_simple_numbers,.pagination{
+   
+    justify-content: center !important;
+    align-content: center !important;
+    align-content: center !important;
+    position:  relative !important;
+  
+}
+
+.dataTables_filter{
+    text-align: right;
+    width: 100% !important; 
+    max-width:100% !important ;
+    min-width: 100% !important;
+}
+.form-control-sm{
+  
+    width: 25vw !important; 
+    max-width:25vw !important ;
+    min-width: 25vw !important;
+    transform: translate(-4%,0);
+    
+}
+.btn-group{
+
+    position: relative;
+    width: 20%;
+  
+}
+.exams{
+    top: 8% !important;
+
+}
+.table-responsive{
+    width: 95% ; 
+    max-width:95% ;
+    min-width: 95%;
+   top: 0;
+   position:absolute;
+}
+body{
+    height: 80vw;
+}
+.container{
+
+    height: 80vw !important;
+    min-height: 80vw !important;
+    max-height:80vw !important ;
+
+}

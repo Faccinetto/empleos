@@ -1,0 +1,508 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorForm {
+
+    background: url(../img/examen.jpg);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.sombre{
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.155);
+}
+.preguRespues{
+    background-color: rgba(255, 255, 255,0);
+    z-index: 4;
+    position: absolute;
+    top: 25vh;
+    height: 75%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0,0.8) !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.infoExamen{   
+    background: url(../img/datos.jpg);
+    border-radius: 5px;
+    z-index: 4;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0,0.8) !important;
+}
+.cronos{
+    position: fixed;
+    right: 0;
+    background-color: white;
+    z-index: 4;
+    margin-left:0 ;
+    padding-left: 0;
+}
+@media (max-width: 820px) {
+    .bloqueExamne{
+        width: 100vw;
+        flex-direction: column;
+        
+    }
+    h1,h2,h3,h4,h5{
+        font-size: 15px;
+    }
+    
+    label{
+    width: 10px;
+    height: 10px;
+    width: 100%;
+    }
+    .preguntas{
+        height: 40%;
+    } 
+    
+}
+@media (max-width: 720px) {
+    .bloqueExamne{
+        width: 100vw;
+        flex-direction: column;
+    }
+    h1,h2,h3,h4,h5{
+        font-size: 15px;
+    }
+    
+    label{
+    width: 10px;
+    height: 10px;
+    width: 100%;
+    }
+    .preguntas{
+        height: 40%;
+    }
+}
+@media (max-width: 350px) {
+    .bloqueExamne{
+        width: 100vw;
+        flex-direction: column;
+    }
+    h1,h2,h3,h4,h5{
+        font-size: 15px;
+    }
+    
+    label{
+    width: 10px;
+    height: 10px;
+    width: 100%;
+    }
+    .preguntas{
+        height: 60%;
+    }
+    
+}
+
+
+.bloqueExamne{
+  
+    height: 80%;
+    background-color: white;
+    margin:0;
+    padding: 0;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    overflow-y: scroll;
+    transform: translate(0,-5vw);
+   
+    
+}
+
+
+
+.tituloExam,.datosPersonales{
+    position: relative;
+    display: inline-block;
+    padding-left: 0;
+    height: 90%;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+  
+}
+
+
+h1{
+    font-weight: 600;
+    color: white;    
+    
+}
+
+@media (max-width: 1366px) {
+    
+    .card-title{
+
+        font-size: 30px;
+
+    }
+    
+}
+@media (max-width:1920px) {
+
+    .cronometro{
+
+        width: 20%;
+        right: 13% !important;
+
+    }
+}
+@media (max-width:1366px) {
+
+    .cronometro{
+
+        width: 25%;
+        right: 13% !important;
+
+    }
+}
+@media (max-width:720px) {
+
+    .cronometro{
+
+        width: 85%;
+        color: white;
+
+    }
+}
+
+.temporisador{
+    position: fixed;
+    top: 0;
+    right: 15vw;
+    height: 80px; 
+    z-index: 5 !important;
+    width: 100%;
+    
+    
+}
+.cronometro{
+    
+   
+    height: 100%;
+    border-top: solid 3px rgba(0, 0, 0, 0.4);
+    border-bottom: solid 3px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 0;
+    transform: translate(50%,0);
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.955);
+}
+.datos{
+    position: absolute !important;
+    display: inline-block !important;
+}
+.masFolio{
+    right: 0;
+}
+.examInfos{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.hrs{
+    color: black !important;
+    background: black !important;
+    font-weight: 900 !important;
+ 
+}
+.btnTerminar{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: left;
+}
+.btnsTerFlotan{
+    width: 100%;
+    margin: 0;
+    border: solid 3px;
+    font-weight: 500;
+}
+.tiempo{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    text-align: left;
+    display: inline-block;
+    
+    
+}
+.instrucciones{
+    height: 5%;
+    max-height: 5%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3%;
+    
+}
+.preguntasRespuestas{
+
+    height: 80%;
+    padding: 0;
+    padding-left:5% ;
+    padding-right: 5%;
+    margin: 0;
+    position: relative;
+    
+}
+
+.contenidoExamne{
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+    
+}
+.preguntas {
+    
+    margin-left: 0;
+    margin-right: 0;
+    padding:0;
+    width: 100%;
+   
+   
+}
+
+.contenidoPregunta{
+    min-height: 10% !important;
+    height: 15% !important;
+    max-height: 30% !important;
+
+}
+.hs{
+    transform: translate(0,2vw);
+}
+.form-check-input,label{
+    width: 20px;
+    height: 20px;
+    
+}
+.form-check-input{
+    cursor: pointer;
+}
+.form-check_active{
+    background-color: black !important;
+}
+.form-check{
+    width: 100%;
+    margin-left: 2vw;
+    
+}
+.form-check:hover{
+    background:url(../img/datos.jpg) ;
+}
+label{
+    width: 80%;
+    margin-left: 2%;
+}
+
+legend{
+    font-size: 10px;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    text-align: center !important;
+   
+}
+fieldset{
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block;
+   
+}
+.cronos{
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    display: flex;
+    background: none !important;
+    
+}
+
+#Horas{
+  
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    left:0;
+    font-size: 20px;
+    width: 100%;
+}
+#Segundos{
+    position: absolute;
+    margin: 0 !important;
+    padding: 0 !important;
+    right: 0;
+    font-size: 20px;
+    width: 100%;
+    
+}
+.indicador{
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 40%;
+  
+    
+}
+.hr,.sg{
+    position: absolute;
+    bottom: 8%;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 40%;
+    display: flex;
+   
+}
+.hr{
+    width: 50%;
+    left: 0;
+    text-align: right !important;
+ 
+   
+    
+}
+.sg{
+
+    width: 50%;
+    right: 0;
+    text-align: left !important;
+  
+   
+}
+/* Demadre*/
+#block2{
+    transform: translate(0,-5vw) !important;
+}
+#block3{
+    transform: translate(0,-5vw) !important;
+}
+#block4{
+    transform: translate(0,-46vw) !important;
+}
+#block5{
+    transform: translate(0,-52vw) !important;
+}
+
+
+.botonTerminado{
+    
+    bottom: 0 !important;
+    transform: translate(0,180vw);
+    margin-bottom:4vw ;
+    padding-bottom: 4vw;
+    margin-top: 4vw;
+    padding-top: 4vw;
+}
+/* FORM HIDEN*/
+
+  @media (max-width:1920px){
+    
+    .botonTerminado{
+    
+        bottom: 2vw !important;
+        transform: translate(0,430vw);
+        padding-bottom: 3vw;
+       
+    }
+     #mas{
+        transform: translate(0,510vw) !important;
+    }
+    #block2{
+        transform: translate(0,-5vw) !important;
+    }
+    #block3{
+        transform: translate(0,-5vw) !important;
+    }
+    #block4{
+        transform: translate(0,-46vw) !important;
+    }
+    #block5{
+        transform: translate(0,-52vw) !important;
+    }
+    
+  }
+  
+  @media (max-width:1366px){
+    
+    .botonTerminado{
+    
+        bottom: 5% !important;
+        transform: translate(0,480vw);
+      
+    }
+    #bt2{
+        transform: translate(0,475vw) !important;
+    }
+    #nxa{
+        transform: translate(0,470vw) !important;
+    }
+    
+    #mas{
+        transform: translate(0,465vw) !important;
+    }
+    #terminosa{
+        transform: translate(0,400vw) !important;
+    }
+
+    #block2{
+        transform: translate(0,-15vw) !important;
+    }
+    #block3{
+        transform: translate(0,-30vw) !important;
+    }
+    #block4{
+        transform: translate(0,-40vw) !important;
+    }
+    #block5{
+        transform: translate(0,-52vw) !important;
+    }
+  
+  }
+  .datosExamen{
+    z-index: 1 !important;
+  
+  }
+  .cronometro{
+    margin: 0;
+    padding: 0;
+  }
+  

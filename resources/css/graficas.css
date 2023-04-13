@@ -1,0 +1,48 @@
+.graficosVi{
+    width: 100%;
+    position: relative;
+    top: 0%;
+    height: 40%;
+    display: block;
+    transform: translate(0%,-30%);
+
+}
+
+.gra{
+  height: 80%;
+}
+.divInstrucciones{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.botonImprimir{
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    text-align: right;
+    display: block;
+
+}
+
+.divInstrucciones{
+    height: 15%;
+    min-height:15% ;
+    max-height:15% ;
+    align-items: center;
+    display: flex;
+}
+.contenedor{
+    height: 100%;
+    min-height:100% ;
+    max-height: 100%;
+
+}
+
+.container{
+
+    height: 100vw !important;
+    min-height:100vw !important;
+    max-height: 100vw !important;
+  
+}
